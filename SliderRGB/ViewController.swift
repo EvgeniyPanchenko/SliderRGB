@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet var ViewColorized: UIView!
     
     @IBOutlet var labelRedValue: UILabel!
@@ -26,25 +25,22 @@ class ViewController: UIViewController {
         // ViewColorized
         ViewColorized.layer.cornerRadius = 10
         
-        // Label
+        // Labels
         labelRedValue.text = String(sliderRedValue.value)
         LabelGreenValue.text = String(sliderGreenValue.value)
         LabelBlueValue.text = String(sliderBlueValue.value)
     }
-
-
+    
     @IBAction func sliderActionRedValue() {
-        labelRedValue.text = String(sliderRedValue.value)
+        labelRedValue.text = String(format: "%.2f", sliderRedValue.value)
     }
     
     @IBAction func sliderActionGreenValue() {
-        LabelGreenValue.text = String(sliderGreenValue.value)
+        LabelGreenValue.text = String(format: "%.2f", sliderGreenValue.value)
     }
     
     @IBAction func sliderActionBlueValue() {
-        LabelBlueValue.text = String(sliderBlueValue.value)
+        LabelBlueValue.text = String(format: "%.2f", sliderBlueValue.value)
     }
-    
-    
 }
 

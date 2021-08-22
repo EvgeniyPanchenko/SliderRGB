@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         blueLabel.text = String(blueSlider.value)
     }
     
-    func setColor() {
+    private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),

@@ -31,25 +31,28 @@ class ViewController: UIViewController {
         blueLabel.text = String(blueSlider.value)
     }
     
-    @IBAction func redSliderAction() {
-        redLabel.text = String(format: "%.2f", redSlider.value)
-    }
-    
-    @IBAction func greenSliderAction() {
-        greenLabel.text = String(format: "%.2f", greenSlider.value)
-    }
-    
-    @IBAction func blueSliderAction() {
-        blueLabel.text = String(format: "%.2f", blueSlider.value)
-    }
-    
-    private func setColor() {
+    func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
+    }
+    
+    @IBAction func redSliderAction() {
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        setColor()
+    }
+    
+    @IBAction func greenSliderAction() {
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
+        setColor()
+    }
+    
+    @IBAction func blueSliderAction() {
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
+        setColor()
     }
 }
 

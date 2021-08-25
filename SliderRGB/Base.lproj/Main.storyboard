@@ -55,7 +55,7 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
                                                 <connections>
-                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Rw5-OJ-xtC"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="4qt-tJ-QRX"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -89,7 +89,7 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
                                                 <connections>
-                                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kfk-gP-8P3"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nwr-sx-gAS"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -123,7 +123,7 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor"/>
                                                 <connections>
-                                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="zNm-kB-lw3"/>
+                                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="RXX-XY-W03"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
